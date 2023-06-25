@@ -1,5 +1,6 @@
 # Fizz Buzz Module
 
+
 def calculate(num: int) -> list:
     arr = []
     for n in range(1, num + 1):

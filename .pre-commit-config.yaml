@@ -12,7 +12,6 @@ repos:
     rev: 6.1.1
     hooks:
       - id: pydocstyle
-        entry: poetry run pydocstyle
         args: [ '--add-ignore=D100,D101,D102,D103,D104,D105,D106,D107', '--convention=google' ]
   - repo: local
     hooks:
