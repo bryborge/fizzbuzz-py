@@ -16,6 +16,7 @@ pytest = "^7.4.0"
 
 [tool.poetry.group.development.dependencies]
 pre-commit = "^3.3.3"
+coverage = "^7.2.7"
 
 
 [build-system]
