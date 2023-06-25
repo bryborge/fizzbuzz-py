@@ -1,4 +1,4 @@
-from fizzbuzz.fizzbuzz import calculate
+from fizzbuzz import calculate
 
 
 def test_fizzbuzz_replaces_all_numbers_divisible_by_three_with_fizz():
