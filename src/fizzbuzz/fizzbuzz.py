@@ -1,18 +1,26 @@
 # Fizz Buzz Module
 
+class FizzBuzz:
+    pass
+
+
 def calculate(num: int) -> list:
     arr = []
     for n in range(1, num + 1):
-        if n % 3 == 0 and n % 5 == 0:
+        if _fizzy(n) and _buzzy(n):
             arr.append('FizzBuzz')
-        elif n % 3 == 0:
+        elif _fizzy(n):
             arr.append('Fizz')
-        elif n % 5 == 0:
+        elif _buzzy(n):
             arr.append('Buzz')
         else:
             arr.append(n)
     return arr
 
 
-class FizzBuzz:
-    pass
+def _fizzy(n: int) -> bool:
+    return n % 3 == 0
+
+
+def _buzzy(n: int) -> bool:
+    return n % 5 == 0
