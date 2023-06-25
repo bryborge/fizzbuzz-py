@@ -8,6 +8,11 @@ repos:
     hooks:
       - id: poetry-check
       - id: poetry-lock
+  - repo: https://github.com/pycqa/pydocstyle
+    rev: 6.1.1
+    hooks:
+      - id: pydocstyle
+        args: [ '--add-ignore=D100,D101,D102,D103,D104,D105,D106,D107', '--convention=google' ]
   - repo: local
     hooks:
       - id: pytest-check
