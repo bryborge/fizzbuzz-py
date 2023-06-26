@@ -2,8 +2,10 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
-      - id: name-tests-test
-      - id: end-of-file-fixer
+      - id: name-tests-test     # enforce test file names (e.g. tests/mymodule_test.py)
+      - id: trailing-whitespace # trim trailing whitespace
+      - id: end-of-file-fixer   # add single empty line at EOF
+      - id: no-commit-to-branch # don't commit to `master` or `main` directly
   - repo: https://github.com/python-poetry/poetry
     rev: 1.5.1
     hooks:
