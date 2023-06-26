@@ -5,20 +5,17 @@ description = ""
 authors = ["Bryan Borgeson <bryborge@gmail.com>"]
 readme = "README.md"
 
-
 [tool.poetry.dependencies]
 python = "^3.11"
 
-
 [tool.poetry.group.test.dependencies]
 pytest = "^7.4.0"
-
 
 [tool.poetry.group.development.dependencies]
 pre-commit = "^3.3.3"
 coverage = "^7.2.7"
 pydocstyle = "^6.3.0"
-
+pytest-cov = "^4.1.0"
 
 [build-system]
 requires = ["poetry-core"]

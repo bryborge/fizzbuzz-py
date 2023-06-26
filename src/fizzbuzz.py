@@ -1,7 +1,8 @@
-# Fizz Buzz Module
+"""Fizz Buzz Module."""
 
 
-def calculate(num: int) -> list:
+def create(num: int) -> list:
+    """Create a 'Fizz Buzz' list."""
     arr = []
     for n in range(1, num + 1):
         if _fizzy(n) and _buzzy(n):
