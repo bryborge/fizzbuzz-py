@@ -4,16 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["Bryan Borgeson <bryborge@gmail.com>"]
 readme = "README.md"
-packages = [{include = "fizzbuzz", from = "src"}]
-
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
-
-[tool.poetry.group.test.dependencies]
+[tool.poetry.dev-dependencies]
+coverage = "^7.2.7"
+pre-commit = "^3.3.3"
+pydocstyle = "^6.3.0"
 pytest = "^7.4.0"
-
+pytest-cov = "^4.1.0"
 
 [build-system]
 requires = ["poetry-core"]
