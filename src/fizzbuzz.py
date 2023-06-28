@@ -6,11 +6,11 @@ def create(num: int) -> list:
     arr = []
     for n in range(1, num + 1):
         if _fizzy(n) and _buzzy(n):
-            arr.append('FizzBuzz')
+            arr.append("FizzBuzz")
         elif _fizzy(n):
-            arr.append('Fizz')
+            arr.append("Fizz")
         elif _buzzy(n):
-            arr.append('Buzz')
+            arr.append("Buzz")
         else:
             arr.append(n)
     return arr
