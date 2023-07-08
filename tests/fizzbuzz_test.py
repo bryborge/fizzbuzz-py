@@ -1,4 +1,4 @@
-from fizzbuzz import create
+from src.fizzbuzz import create
 
 # Arrange, Act
 FIZZ_BUZZ_ARR = create(15)
